@@ -21,11 +21,6 @@ public class PaymentController {
         return "Hello world";
     }
 
-    @RequestMapping("/time")
-    public String getTime() {
-        return new Date(System.currentTimeMillis()).toString();
-    }
-
     @RequestMapping(value = "/pay", method = RequestMethod.POST)
     public String paymentProcessing(String payload) {
         try {
