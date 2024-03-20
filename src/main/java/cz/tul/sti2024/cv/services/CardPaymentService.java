@@ -5,7 +5,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class CardPaymentService implements IPaymentService {
-
     private final PaymentServiceProcessing paymentServiceProcessing;
 
     public CardPaymentService(PaymentServiceProcessing paymentServiceProcessing) {
