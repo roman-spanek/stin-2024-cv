@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class PaymentServiceProcessing {
-    public void pay(String payment){
+    public void pay(String payment) {
         System.out.println(payment);
     }
 }
