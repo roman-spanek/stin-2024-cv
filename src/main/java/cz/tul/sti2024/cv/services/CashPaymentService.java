@@ -21,7 +21,6 @@ public class CashPaymentService implements IPaymentService {
             paymentServiceProcessing.pay(paymentTransformations.transformXMLFromPayment(payment));
         } catch (JsonProcessingException jsonProcessingException) {
             //handle here
-
         }
     }
 }
