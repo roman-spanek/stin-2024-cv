@@ -2,9 +2,11 @@ name: Java CI with Maven on feature
 
 on:
   push:
-    branches: [ 'feature**' ]
+    branches: 
+      - 'feature**' 
   pull_request:
-    branches: [ 'main' ]
+    branches: 
+      - 'main'
 
 jobs:
   build:
