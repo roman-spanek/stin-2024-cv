@@ -16,5 +16,6 @@ public class CardPaymentService implements IPaymentService {
     public void processPayment(Payment payment) {
         String toPay = payment.getAmount() + "/" + payment.getCurrency();
         paymentServiceProcessing.pay(toPay);
+
     }
 }
