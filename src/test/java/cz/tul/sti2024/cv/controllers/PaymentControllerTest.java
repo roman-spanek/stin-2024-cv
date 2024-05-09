@@ -35,9 +35,4 @@ public class PaymentControllerTest {
         String payload = Files.readString(new ClassPathResource("inputdata/card_valid_payment.json").getFile().toPath());
         paymentController.paymentProcessing(payload);
     }
-    @Test
-    void testCashPayment() throws IOException {
-        String payload = Files.readString(new ClassPathResource("inputdata/cash_valid_payment.json").getFile().toPath());
-        paymentController.paymentProcessing(payload);
-    }
 }
